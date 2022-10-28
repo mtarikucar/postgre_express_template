@@ -6,7 +6,7 @@ async function create_product(req, res) {
   const { name, imgpath, description, price, quantity } = req.body;
 
   try {
-    if (!name | !price | !quantity)
+    if (!name & !price & !quantity)
       return res.status(400).json({
         status: "badRequest",
         message: "Missing parameters",
