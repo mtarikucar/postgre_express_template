@@ -36,10 +36,10 @@ app.use("/product", productRouter);
 app.use("/user",userRouter)
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log(
     process.env.NODE_ENV && process.env.NODE_ENV === "development"
-      ? "Started: http://localhost:3000"
+      ? `Started: http://localhost:3000${process.env.PORT}`
       : "Started: https://shark-app-vag45.ondigitalocean.app/"
   );
 });
