@@ -46,11 +46,13 @@ async function get_allProduct(req, res) {
           message: "product not found!",
         });
       }
+      
+      var productsJSON = JSON.stringify(products);
 
       res.status(200).json({
         status: "success",
         message: "Query successfuly",
-        data: products,
+        data: productsJSON
       });
     });
   } catch (err) {
