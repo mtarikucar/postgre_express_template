@@ -39,27 +39,18 @@ async function create_product(req, res) {
 //! bu metotda json formatı bakımından bir eksik var üzerine geliştirme yapma test sırasında düzeltirsin
 async function get_allProduct(req, res) {
   try {
-    return await models.product.findAll({}).then((products) => {
+    return await models.product.findAll().then((products) => {
       if (!products) {
         res.status(404).json({
           status: "404",
           message: "product not found!",
         });
       }
-      
-      
 
       res.status(200).json({
         status: "success",
         message: "Query successfuly",
-        data: {
-            name: "tarik",
-            description: "tasd2777@gmail.com",
-            quantity: 21,
-            price: 10,
-            password: "asddsa"
-        
-        }
+        data: products,
       });
     });
   } catch (err) {
