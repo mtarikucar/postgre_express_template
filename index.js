@@ -39,7 +39,7 @@ app.use("/user",userRouter)
 app.listen(process.env.PORT, () => {
   console.log(
     process.env.NODE_ENV && process.env.NODE_ENV === "development"
-      ? `Started: http://localhost:3000${process.env.PORT}`
-      : "Started: https://shark-app-vag45.ondigitalocean.app/"
+      ? `Started: http://localhost:${process.env.PORT}`
+      : "Started: https://nurlightapi.herokuapp.com/"
   );
 });
