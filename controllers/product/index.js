@@ -47,12 +47,19 @@ async function get_allProduct(req, res) {
         });
       }
       
-      var productsJSON = JSON.stringify(products);
+      
 
       res.status(200).json({
         status: "success",
         message: "Query successfuly",
-        data: productsJSON
+        data: {
+            name: "tarik",
+            description: "tasd2777@gmail.com",
+            quantity: 21,
+            price: 10,
+            password: "asddsa"
+        
+        }
       });
     });
   } catch (err) {
