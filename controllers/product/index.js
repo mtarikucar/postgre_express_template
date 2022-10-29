@@ -1,5 +1,6 @@
 "use strict";
 
+const { json } = require("body-parser");
 const { models } = require("../../database");
 
 async function create_product(req, res) {
@@ -47,10 +48,12 @@ async function get_allProduct(req, res) {
         });
       }
 
+      console.log(typeof(products))
+
       res.status(200).json({
         status: "success",
         message: "Query successfuly",
-        data: products,
+        data: JSON.stringify(products)
       });
     });
   } catch (err) {

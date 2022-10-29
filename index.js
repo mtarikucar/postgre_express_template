@@ -1,6 +1,7 @@
 "use strict";
 
 const express = require("express");
+var cors = require('cors')
 const app = express();
 
 require("dotenv").config();
@@ -8,6 +9,8 @@ require("dotenv").config();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.use(cors())
 
 app.get("/", (req, res) => {
   res.send("Hello!");
