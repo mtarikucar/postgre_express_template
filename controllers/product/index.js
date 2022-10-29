@@ -48,12 +48,10 @@ async function get_allProduct(req, res) {
         });
       }
 
-      console.log(typeof(products))
-
       res.status(200).json({
         status: "success",
         message: "Query successfuly",
-        data: JSON.stringify(products)
+        data: products
       });
     });
   } catch (err) {
