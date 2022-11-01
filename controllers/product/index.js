@@ -1,6 +1,6 @@
 "use strict";
 
-const { json } = require("body-parser");
+
 const { models } = require("../../database");
 
 async function create_product(req, res) {
