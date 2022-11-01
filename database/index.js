@@ -6,12 +6,12 @@ const sequelize = new Sequelize(
   process.env.NODE_ENV === "development"
     ? process.env.POSTGRES_URL
     : {
-        username: "cvskhvyaytcicx",
+        username: "ezbrepckihmpib",
         password:
-          "0f009bf01d20c51aa22c82841e7a9d3c37e551bdff610508b7c7c4fbbeb11fbe",
-        database: "d4f3q82uhpn3io",
+          "28e80dfbb136d8d13a24e6a6b7e9f8727ee925902b20640a00b5e7477c59f66a",
+        database: "dafdhbc02qpjag",
         port: 5432,
-        host: "ec2-99-80-170-190.eu-west-1.compute.amazonaws.com",
+        host: "ec2-54-229-217-195.eu-west-1.compute.amazonaws.com",
         ssl: false,
         dialect: "postgres",
         dialectOptions: {
