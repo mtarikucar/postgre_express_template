@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const corsOptions ={
-  origin:'https://www.nurlightllc .com', 
+  origin:'https://www.nurlightllc.com', 
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200
 }
