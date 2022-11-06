@@ -10,8 +10,9 @@ require("dotenv").config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+
 const corsOptions ={
-  origin:'https://nurlightllc.com', 
+  origin:'https://nurlightllc.com' || 'https://www.nurlightllc.com', 
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200
 }
