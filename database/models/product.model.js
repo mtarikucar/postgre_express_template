@@ -28,7 +28,7 @@ module.exports = (sequelize) => {
       },
       quantity: {
         allowNull: false,
-        type: DataTypes.SMALLINT,
+        type: DataTypes.STRING,
       },
     },
     {
